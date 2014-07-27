@@ -1,0 +1,47 @@
+{
+    "productGlobal": {
+
+        "120497": {
+            "name": "product1",
+            "title": "bar",
+            "isActive" : 1
+        },
+
+        "313235": {
+            "name": "product2",
+            "title": "bar",
+            "isActive" : 0
+        },
+
+        "373876": {
+            "name": "product3",
+            "title": "bar",
+            "isActive" : 1
+        },
+
+        "685143": {
+            "name": "product4",
+            "title": "bar",
+            "isActive" : 1
+        },
+
+        "290400": {
+            "name": "product5",
+            "title": "bar",
+            "isActive" : 1
+        },
+
+        "815653": {
+            "name": "product6",
+            "title": "bar",
+            "isActive" : 1
+        },
+
+        "214823": {
+            "name": "product7",
+            "title": "bar",
+            "isActive" : 1
+        }
+
+    }
+}

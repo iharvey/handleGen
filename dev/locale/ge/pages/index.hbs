@@ -1,0 +1,30 @@
+{{> htmlhead }}
+
+
+{{> header }}
+
+<h1>{{name}} -- {{bazz}}</h1>
+<p>{{templateName}}</p>
+
+<table>
+    <tr>
+        <td>
+            ${in.the.template}
+            {{> sidebarl_foo }}
+        </td>
+        <td>
+        <table>
+          {{#each products}}
+                {{#productgetter}}
+                    {{> applications_productlisting }}
+                {{/productgetter}}
+          {{/each}}
+        </table>
+        </td>
+        <td>
+            {{> sidebarr_baz }}
+        </td>
+    </tr>
+</table>
+
+{{> htmlfoot }}

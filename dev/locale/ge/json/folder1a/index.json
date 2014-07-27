@@ -1,0 +1,7 @@
+{
+  "name": "Alice",
+  "template": "template1a",
+  "templateName": "globalOverride",
+  "htmltitle": "global html title overriden",
+  "stylesheet": "${bar}"
+}

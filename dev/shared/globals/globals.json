@@ -1,0 +1,10 @@
+{
+    "meta": {
+        "xmeta": "xmeta",
+        "xname": "xname"
+    },
+    "templateName": "globalglobal",
+    "bazz": "foo",
+    "global1": "root",
+    "global2": "root"
+}

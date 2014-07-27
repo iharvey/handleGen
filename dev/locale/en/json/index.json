@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "xname": "xname override"
+    },
+
+    "id": 0,
+    "name": "Gonzales",
+    "template": "roooot",
+
+    "products": [
+        120497,
+        313235,
+        373876,
+        685143,
+        290400,
+        815653,
+        214823
+    ]
+}

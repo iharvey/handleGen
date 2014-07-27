@@ -1,0 +1,11 @@
+{
+    "meta": {
+        "xmeta": "xmeta",
+        "xname": "xname"
+    },
+    "templateName": "globalJsonGlobbedTemplate",
+    "htmltitle": "global html title",
+    "htmldoctype": "html",
+    "stylesheet": "${foo}",
+    "bazz": "bar"
+}
