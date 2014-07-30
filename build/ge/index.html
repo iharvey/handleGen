@@ -1,3 +1,4 @@
+<!-- start partial htmlhead.hbs -->
 <!DOCTYPE html>
 <html class="no-js" lang="">
 <head>
@@ -10,60 +11,80 @@
     <link rel=stylesheet href="${foo}">
 </head>
 <body>
+    <!-- end partial htmlhead.hbs -->
+    <!-- start partial header.hbs -->
+    <div class="header"></div>
+    <!-- end partial header.hbs -->
+    <h1>Gonzales -- bar</h1>
+    <p>globalJsonGlobbedTemplate</p>
+    <table>
+        <tr>
+            <td>
+                ${in.the.template}
+                <!-- start partial sidebarl_foo.hbs -->
+                <ul>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+                <!-- end partial sidebarl_foo.hbs -->
+            </td>
+            <td>
+                <table>
+                    <!-- start partial applications_productlisting.hbs -->
+                    <tr>
+                        <td>product1</td>
+                        <td>bar</td>
+                    </tr>
+                    <!-- end partial applications_productlisting.hbs -->
+                    <!-- start partial applications_productlisting.hbs -->
+                    <tr>
+                        <td>product3</td>
+                        <td>bar</td>
+                    </tr>
+                    <!-- end partial applications_productlisting.hbs -->
+                    <!-- start partial applications_productlisting.hbs -->
+                    <tr>
+                        <td>product4</td>
+                        <td>bar</td>
+                    </tr>
+                    <!-- end partial applications_productlisting.hbs -->
+                    <!-- start partial applications_productlisting.hbs -->
+                    <tr>
+                        <td>product5</td>
+                        <td>bar</td>
+                    </tr>
+                    <!-- end partial applications_productlisting.hbs -->
+                    <!-- start partial applications_productlisting.hbs -->
+                    <tr>
+                        <td>product6</td>
+                        <td>bar</td>
+                    </tr>
+                    <!-- end partial applications_productlisting.hbs -->
+                    <!-- start partial applications_productlisting.hbs -->
+                    <tr>
+                        <td>product7</td>
+                        <td>bar</td>
+                    </tr>
+                    <!-- end partial applications_productlisting.hbs -->
+                </table>
+            </td>
+            <td>
+                <!-- start partial sidebarr_baz.hbs -->
+                <ul>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+                <!-- end partial sidebarr_baz.hbs -->
+            </td>
+        </tr>
+    </table>
+    <!-- start partial htmlfoot.hbs -->
 </body>
 </html>
-<h1>Gonzales -- bar</h1>
-<p>globalJsonGlobbedTemplate</p>
-<table>
-    <tr>
-        <td>
-            ${in.the.template}
-            <ul>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-            </ul>
-        </td>
-        <td>
-            <table>
-                <tr>
-                    <td>product1</td>
-                    <td>bar</td>
-                </tr>
-                <tr>
-                    <td>product3</td>
-                    <td>bar</td>
-                </tr>
-                <tr>
-                    <td>product4</td>
-                    <td>bar</td>
-                </tr>
-                <tr>
-                    <td>product5</td>
-                    <td>bar</td>
-                </tr>
-                <tr>
-                    <td>product6</td>
-                    <td>bar</td>
-                </tr>
-                <tr>
-                    <td>product7</td>
-                    <td>bar</td>
-                </tr>
-            </table>
-        </td>
-        <td>
-            <ul>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-                <li>Lorem</li>
-            </ul>
-        </td>
-    </tr>
-</table>
-</body>
-</html>
+<!-- end partial htmlfoot.hbs -->

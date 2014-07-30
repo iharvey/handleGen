@@ -1,11 +1,11 @@
 {{> htmlhead }}
 
-
 {{> header }}
 
+<!-- start template content -->
+<div class="body">
 <h1>{{name}} -- {{bazz}}</h1>
 <p>{{templateName}}</p>
-
 <table>
     <tr>
         <td>
@@ -14,11 +14,13 @@
         </td>
         <td>
         <table>
-          {{#each products}}
+            <!-- start each product -->
+            {{#each products}}
                 {{#productgetter}}
                     {{> applications_productlisting }}
                 {{/productgetter}}
-          {{/each}}
+            {{/each}}
+            <!-- end each product -->
         </table>
         </td>
         <td>
@@ -26,5 +28,7 @@
         </td>
     </tr>
 </table>
+</div>
+<!-- end template content -->
 
 {{> htmlfoot }}

@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function(grunt) {
 
     var util = require('./grunt-helpers.js')(grunt);
@@ -25,17 +27,16 @@ module.exports = function(grunt) {
             grunt.log.error(this.name + ", no locale - aborting");
             return false;
         } else {
-
+            var i, len;
             // We have one or more build targets - check they all exist and abort if not
-            for (var i = 0, len = this.args.length; i < len; i++) {
+            for (i = 0, len = this.args.length; i < len; i++) {
                 if (!util.serviceExists(this.args[i])) {
                     grunt.log.error(this.args[i] + ' - Sorry, that service does not exist');
                     return false;
                 }
-            };
-
+            }
             // If we're still here, run the build for each of the targets
-            for (var i = 0, len = this.args.length; i < len; i++) {
+            for (i = 0, len = this.args.length; i < len; i++) {
                 grunt.task.run([
                     'clean:tmp',
                     'jshint:locale:' + this.args[i],
@@ -43,7 +44,7 @@ module.exports = function(grunt) {
                     'prettify:locale:' + this.args[i],
                     'clean:tmp'
                 ]);
-            };
+            }
         }
     });
 

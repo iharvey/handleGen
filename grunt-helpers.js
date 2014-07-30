@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = function(grunt) {
 
     function removePath(element) {
@@ -6,7 +8,7 @@ module.exports = function(grunt) {
 
     function removeBlacklistedDirectories(element) {
         if (element.indexOf('foo') !== -1) {
-            return false
+            return false;
         }
         return true;
     }
@@ -24,9 +26,9 @@ module.exports = function(grunt) {
         isBlacklistedTask: function(task) {
             var tasks = ['pkg', 'dir', 'noop', 'config'];
             if (tasks.indexOf(task) !== -1) {
-                return true
+                return true;
             }
             return false;
         }
-    }
+    };
 };
